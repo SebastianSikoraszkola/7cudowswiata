@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7 Cudów Świata</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>7 Cudów Świata</h1>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#tabela">Tabela</a></li>
+                <li><a href="#formularz">Formularz</a></li>
+                <li><a href="#mapa">Mapa</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="galeria">
+            <h2>Galeria Zdjęć</h2>
+            <div class="gallery">
+                <img src="1.jpg" alt="Cud 1">
+                <img src="5.jpg" alt="Cud 2">
+                <img src="3.jpg" alt="Cud 3">
+                <img src="4.jpg" alt="Cud 4">
+            </div>
+            <br><br><hr><br><br>
+        </section>
+        <section id="tabela">
+            <h2>Tabela Informacyjna</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Cud</th>
+                        <th>Lokalizacja</th>
+                        <th>Rok Powstania</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Wielki Mur Chiński</td>
+                        <td>Chiny</td>
+                        <td>VII w. p.n.e.</td>
+                    </tr>
+                    <tr>
+                        <td>Koloseum</td>
+                        <td>Rzym, Włochy</td>
+                        <td>80 n.e.</td>
+                    </tr>
+                    <tr>
+                        <td>Machu Picchu</td>
+                        <td>Peru</td>
+                        <td>XV w.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <a href="https://www.travelbit.pl/siedem-cudow-swiata/" target="_blank">Więcej o cudach</a>
+        </section>
+        <section id="formularz">
+            <h2>Formularz Opinie</h2>
+            <form action="#" method="POST">
+                <label for="name">Imię:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="opinia">Twoja opinia:</label>
+                <textarea id="opinia" name="opinia" rows="4" required></textarea>
+                
+                <div class="buttons">
+                    <button type="submit">Wyślij</button>
+                    <button type="reset">Wyczyść</button>
+                </div>
+            </form>
+        </section>
+        <section id="muzyka">
+            <h2>Posłuchaj Muzyki</h2>
+            <audio controls>
+                <source src="music.mp3" type="audio/mpeg">
+                Twoja przeglądarka nie obsługuje elementu audio.
+            </audio>
+        </section>
+        <section id="mapa">
+            <h2>Mapa Lokalizacji</h2>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d2161.751283606237!2d12.490987663043269!3d41.88971534581348!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spl!2spl!4v1737056511430!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025, Sebastian Sikora 2tb</p>
+        <p><a href="mailto:email@gmail.com">Kontakt: email@gmail.com</a></p>
+    </footer>
+</body>
+</html>
+

@@ -1,0 +1,188 @@
+/* Reset stylów */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ogólne stylizacje */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff3e0;
+    color: #5d4037;
+    text-align: center;
+    line-height: 1.8;
+}
+
+header {
+    background-color: #d84315;
+    color: white;
+    padding: 1rem;
+}
+
+header .logo h1 {
+    font-size: 2.5rem;
+    animation: bounce 2s infinite;
+}
+
+nav.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+nav.menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+nav.menu ul li a:hover {
+    color: #ffcc80;
+}
+
+main {
+    padding: 2rem;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Galeria */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+/* Tabela */
+table {
+    margin: 2rem auto;
+    border-collapse: collapse;
+    width: 80%;
+    text-align: center;
+}
+
+table th, table td {
+    border: 1px solid #5d4037;
+    padding: 10px;
+}
+
+table th {
+    background-color: #d84315;
+    color: white;
+}
+
+table td {
+    background-color: #ffe0b2;
+}
+
+/* Formularz */
+form {
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #ffe0b2;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form .buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+form button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #d84315;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #ff7043;
+}
+
+/* Mapa */
+.map iframe {
+    display: block;
+    margin: 2rem auto;
+    border: 1px solid #5d4037;
+    border-radius: 8px;
+}
+
+/* Stopka */
+footer {
+    background-color: #d84315;
+    color: white;
+    padding: 1rem;
+}
+
+footer a {
+    color: #ffcc80;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsywność */
+@media (max-width: 600px) {
+    nav.menu ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1200px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Animacja logo */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
