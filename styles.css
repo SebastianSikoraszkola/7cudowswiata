@@ -1,11 +1,11 @@
-/* Reset stylów */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Ogólne stylizacje */
+
 body {
     font-family: Arial, sans-serif;
     background-color: #fff3e0;
@@ -52,7 +52,7 @@ section h2 {
     margin-bottom: 1rem;
 }
 
-/* Galeria */
+
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -71,7 +71,7 @@ section h2 {
     transform: scale(1.1);
 }
 
-/* Tabela */
+
 table {
     margin: 2rem auto;
     border-collapse: collapse;
@@ -93,7 +93,7 @@ table td {
     background-color: #ffe0b2;
 }
 
-/* Formularz */
+
 form {
     margin: 2rem auto;
     padding: 1rem;
@@ -135,7 +135,7 @@ form button:hover {
     background-color: #ff7043;
 }
 
-/* Mapa */
+
 .map iframe {
     display: block;
     margin: 2rem auto;
@@ -143,7 +143,7 @@ form button:hover {
     border-radius: 8px;
 }
 
-/* Stopka */
+
 footer {
     background-color: #d84315;
     color: white;
@@ -159,7 +159,7 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* Responsywność */
+
 @media (max-width: 600px) {
     nav.menu ul {
         flex-direction: column;
@@ -177,7 +177,7 @@ footer a:hover {
     }
 }
 
-/* Animacja logo */
+
 @keyframes bounce {
     0%, 100% {
         transform: translateY(0);
